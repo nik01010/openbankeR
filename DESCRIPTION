@@ -11,7 +11,13 @@ BugReports: https://github.com/nik01010/openbankeR/issues
 Depends: 
   R (>= 3.2.3)
 Imports: 
-  TODO
+  httr,
+  httpcode,
+  jsonlite,
+  dplyr,
+  magrittr,
+  tidyr,
+  glue
 Suggests: 
   testthat,
   lintr,

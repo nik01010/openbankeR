@@ -66,5 +66,14 @@ rawData
 ```
 
 
+## Additional help
+Use the below commands to find additional documentation about the package
+```R
+??openbankeR
+
+??openbankeR::CreateOpenBankingClient
+```
+
+
 ## Note
 Raw data provided by the API can be a nested structure and may need to be unnested for some types of analysis.
