@@ -48,7 +48,7 @@ Once the client has been set-up, the following queries can be used:
 | Query       | Description                | Input | Output             |
 | ------------- |----------------------|----------------------|-------------------|
 | GetAvailableBanks | Get a list of banks that report the API  | n/a | List of available banks |
-| GetAvailableBanks | Get a list of instruments reported via the API  | n/a | List of available instruments |
+| GetAvailableInstruments | Get a list of instruments reported via the API  | n/a | List of available instruments |
 | GetRawData | Get raw data using the API for a given bank and instrument | Bank name and instrument | Requested raw data |
 
 
