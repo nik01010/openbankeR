@@ -70,7 +70,7 @@ rawData <- openBankingClient$GetRawData(
   instrument = instrument
 )
 
-rawData
+View(rawData)
 ```
 
 ![Raw Data](../man/figures/raw-data-screenshot.PNG)

@@ -2,10 +2,10 @@
 
 <a href="https://nik01010.wordpress.com/" target="_blank">Blog</a> 
 | <a href="https://nik01010.wordpress.com/contact/" target="_blank">Contact</a>
-| <a href="https://openbankinguk.github.io/opendata-api-docs-pub/" target="_blank">Full API Spec</a>
 <br> 
 
-An R package for querying the UK Open Banking (Open Data) API.
+An R package for querying the 
+<a href="https://openbankinguk.github.io/opendata-api-docs-pub/" target="_blank">UK Open Banking (Open Data) API</a>
 
 
 <!-- badges: start -->
@@ -106,7 +106,7 @@ rawData <- openBankingClient$GetRawData(
   instrument = instrument
 )
 
-rawData
+View(rawData)
 ```
 
 ![Raw Data](man/figures/raw-data-screenshot.PNG)

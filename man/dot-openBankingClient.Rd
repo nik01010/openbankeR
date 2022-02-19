@@ -47,8 +47,8 @@ https://github.com/OpenBankingUK/opendata-api-spec-compiled/blob/master/particip
 Otherwise, the user can provide a custom list of bank details.}
 
 \item{\code{version}}{optional. Which version of the API to use. Defaults to "latest.
-When set to "latest", the version used will be the latest available for the selected bank and instrument. 
-The latest available version information will be derived from the bank details table above.
+When set to "latest", the version used will be the latest available for 
+the selected bank and instrument. This information will be derived from the bank details table above.
 Alternatively, the user can supply a manually set version such as "v2.3"}
 
 \item{\code{timeOutSeconds}}{optional. Number of seconds before a request times out. Defaults to 15 seconds}
