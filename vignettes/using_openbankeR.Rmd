@@ -33,6 +33,14 @@ openBankingClient <- openbankeR::CreateOpenBankingClient()
 ```
 
 
+## Bank Details
+```{r, eval = FALSE}
+bankDetails <- openBankingClient$BankDetails
+
+View(bankDetails)
+```
+
+
 ## Available banks
 Get a list of banks that report the API
 ```{r, eval = FALSE}
@@ -64,6 +72,8 @@ rawData <- openBankingClient$GetRawData(
 
 rawData
 ```
+
+![Raw Data](../man/figures/raw-data-screenshot.PNG)
 
 
 ## Additional help

@@ -2,9 +2,13 @@
 #' 
 #' @description Creates a new Open Banking (Open Data) API client with convenient queries
 #'
+#' @section Available client fields:
+#' \itemize{
+#'   \item \strong{BankDetails}: The default table of bank details used to query the API.
+#' }
+#' 
 #' @section Available client queries:
 #' \itemize{
-#'   \item \strong{GetBankDetails}: Get default table of bank details used to query the API.
 #'   \item \strong{GetAvailableBanks}: Get a list of banks that report the API.
 #'   \item \strong{GetAvailableInstruments}: Get a list of instruments reported via the API.
 #'   \item \strong{GetRawData}: Get raw data using the API for a given bank and instrument.
@@ -13,9 +17,10 @@
 #' @param bankDetails optional. Bank details list to use. When set to "default", the
 #' bank details will be taken from the below URL:
 #' https://github.com/OpenBankingUK/opendata-api-spec-compiled/blob/master/participant_store.json
+#' 
 #' Otherwise, the user can provide a custom list of bank details.
 #' 
-#' @param version optional. Which version of the API to use. Defaults to "latest.
+#' @param version optional. Which version of the API to use. Defaults to "latest".
 #' When set to "latest", the version used will be the latest available for the selected bank and instrument. 
 #' The latest available version information will be derived from the bank details table above.
 #' Alternatively, the user can supply a manually set version such as "v2.3"
@@ -30,6 +35,8 @@
 #'
 #' openBankingClient <- openbankeR::CreateOpenBankingClient()
 #' 
+#' bankDetails <- openBankingClient$BankDetails
+#'    
 #' availableBanks <- openBankingClient$GetAvailableBanks()
 #' availableInstruments <- openBankingClient$GetAvailableInstruments()
 #' 
@@ -65,6 +72,8 @@ CreateOpenBankingClient <- function(bankDetails = "default", version = "latest",
     BankDetails = NULL,
     
     
+    #' @title initialize
+    #' 
     #' @description Initialize a new API client
     #' 
     #' @param bankDetails optional. Bank details list to use. When set to "default", the
@@ -73,8 +82,8 @@ CreateOpenBankingClient <- function(bankDetails = "default", version = "latest",
     #' Otherwise, the user can provide a custom list of bank details.
     #' 
     #' @param version optional. Which version of the API to use. Defaults to "latest.
-    #' When set to "latest", the version used will be the latest available for the selected bank and instrument. 
-    #' The latest available version information will be derived from the bank details table above.
+    #' When set to "latest", the version used will be the latest available for 
+    #' the selected bank and instrument. This information will be derived from the bank details table above.
     #' Alternatively, the user can supply a manually set version such as "v2.3"
     #' 
     #' @param timeOutSeconds optional. Number of seconds before a request times out. Defaults to 15 seconds
@@ -93,7 +102,7 @@ CreateOpenBankingClient <- function(bankDetails = "default", version = "latest",
         bankDetails <- private$.getBankDetails()
       }
       
-      private$.validateBankDetails(bankDetails = BankDetails)
+      private$.validateBankDetails(bankDetails = bankDetails)
       
       self$BankDetails <- bankDetails
     },
@@ -107,7 +116,7 @@ CreateOpenBankingClient <- function(bankDetails = "default", version = "latest",
       bankList <- unique(self$BankDetails$name)
       
       return(bankList)
-    }
+    },
     
     
     #' @description Get available instruments for the API
