@@ -1,7 +1,7 @@
 Package: openbankeR
 Type: Package
-Title: R client for querying the UK 'Open Banking' ('Open Data') API
-Version: 0.1.0
+Title: R Client for Querying the UK 'Open Banking' ('Open Data') API
+Version: 0.1.1
 Authors@R: person("Nik", "Lilovski", email = "nik.lilovski@outlook.com",
                   role = c("aut", "cre"))
 Maintainer: Nik Lilovski <nik.lilovski@outlook.com>

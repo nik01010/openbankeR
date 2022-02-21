@@ -11,7 +11,6 @@ An R package for querying the
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/openbankeR)](https://CRAN.R-project.org/package=openbankeR)
 [![R build status](https://github.com/nik01010/openbankeR/workflows/R-CMD-check/badge.svg)](https://github.com/nik01010/openbankeR/actions)
-[![Codecov test coverage](https://codecov.io/gh/nik01010/openbankeR/branch/master/graph/badge.svg)](https://codecov.io/gh/nik01010/openbankeR?branch=master)
 [![Stability: Active](https://masterminds.github.io/stability/active.svg)](https://masterminds.github.io/stability/active.html)
 <!-- badges: end -->
 
