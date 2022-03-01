@@ -25,3 +25,6 @@
 2022-02-21
 * Small changes to address CRAN reviewer comments
 * Invalid URL removed, and Title field now uses title case.
+
+## Reviewer comments
+* For future submissions/updates: Please add a web reference for the API in the form <https:.....> to the description of the DESCRIPTION file with no space after 'https:' and angle brackets for auto-linking.

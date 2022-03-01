@@ -1,11 +1,12 @@
 Package: openbankeR
 Type: Package
 Title: R Client for Querying the UK 'Open Banking' ('Open Data') API
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: person("Nik", "Lilovski", email = "nik.lilovski@outlook.com",
                   role = c("aut", "cre"))
 Maintainer: Nik Lilovski <nik.lilovski@outlook.com>
 Description: Creates a client with queries for the UK 'Open Banking' ('Open Data') API.
+  API wrapper around <https://openbankinguk.github.io/opendata-api-docs-pub>.
 URL: https://github.com/nik01010/openbankeR
 BugReports: https://github.com/nik01010/openbankeR/issues
 Depends: 
