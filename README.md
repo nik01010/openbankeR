@@ -1,6 +1,5 @@
 # openbankeR
 
-<br> 
 
 An R package for querying the 
 <a href="https://openbankinguk.github.io/opendata-api-docs-pub/" target="_blank">UK Open Banking (Open Data) API</a>
